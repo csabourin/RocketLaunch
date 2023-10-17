@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 28px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+body {
+  background-color: rgb(135,206,250);
+}
+
+button {
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  padding: 1em 2em;
+  position: absolute;
+  left: 50%;  /* Horizontal center */
+  top: 60%;   /* Vertical center */
+  transform: translate(-50%, -50%); /* Correct for the button's own size */
+  z-index: 1; /* Ensure the button stays above the canvas */
+}
+
+canvas {
+  pointer-events:none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
